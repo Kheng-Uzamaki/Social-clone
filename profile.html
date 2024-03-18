@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a1831d95e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Profile page - Socialbook</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo" class="logo" />
+
+        </a>
+        
+
+        <ul>
+          <li><img src="images/notification.png" alt="notification" /></li>
+          <li><img src="images/inbox.png" alt="inbox" /></li>
+          <li><img src="images/video.png" alt="notification" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" alt="search" />
+          <input type="text" placeholder="search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="images/profile-pic.png" alt="profile" />
+        </div>
+      </div>
+
+      <!-- Setting -->
+      <div class="settings-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" alt="" />
+            <div>
+              <p>Heng Sokkheng</p>
+              <a href="profile.html">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="images/feedback.png" alt="" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="settings-links">
+            <img src="images/setting.png" class="settings-icon" />
+            <a href="#"
+              >Setting & Privacy <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img src="images/help.png" class="settings-icon" />
+            <a href="#"
+              >Help & support <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img src="images/display.png" class="settings-icon" />
+            <a href="#"
+              >Display & Accessibility <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img src="images/logout.png" class="settings-icon" />
+            <a href="#">Logout <img src="images/arrow.png" width="10px" /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- profile page -->
+    <div class="profile-container">
+      <img src="images/cover.png" class="cover-img" />
+
+      <div class="profile-details">
+        <div class="pd-left">
+          <div class="pd-row">
+            <img src="images/profile.png" class="pd-images" />
+            <div>
+              <h3>Sat Chanthai</h3>
+              <p>3000 Friends -300 mutal friends</p>
+              <img src="images/member-1.png" alt="" />
+              <img src="images/member-2.png" alt="" />
+              <img src="images/member-3.png" alt="" />
+              <img src="images/member-4.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="pd-right">
+          <button type="button">
+            <img src="images/add-friends.png" alt="" />Friend
+          </button>
+          <button type="button">
+            <img src="images/message.png" alt="" />Message</button
+          ><br />
+          <a href="#"><img src="images/more.png" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="profile-info">
+        <div class="info-col">
+          <div class="profile-intro">
+            <h3>Intro</h3>
+            <p class="intro-text">
+              Believe in yourself and you can do unbelievable thing.
+              <img src="images/feeling.png" alt="" />
+            </p>
+            <hr />
+            <ul>
+              <li>
+                <img src="images/profile-job.png" />Director at Thai Smos Ltd
+              </li>
+              <li>
+                <img src="images/profile-study.png" />Studied at ACLEDA
+                University of Business
+              </li>
+              <li><img src="images/profile-study.png" />Went to Phnom Penh</li>
+              <li><img src="images/profile-home.png" />Live in Smos World</li>
+              <li><img src="images/location.png" />Live in Smos World</li>
+            </ul>
+          </div>
+
+          <div class="profile-intro">
+            <div class="title-box">
+              <h3>Photos</h3>
+              <a href="#">All Photos</a>
+            </div>
+
+            <div class="photo-box">
+              <div><img src="images/photo1.png" /></div>
+              <div><img src="images/photo2.png" /></div>
+              <div><img src="images/photo3.png" /></div>
+              <div><img src="images/photo4.png" /></div>
+              <div><img src="images/photo5.png" /></div>
+              <div><img src="images/photo6.png" /></div>
+            </div>
+          </div>
+          <div class="profile-intro">
+            <div class="title-box">
+              <h3>Friends</h3>
+              <a href="#">All Friends</a>
+            </div>
+            <p>3000 (200 mutual)</p>
+
+            <div class="friends-box">
+              <div><img src="images/member-1.png" />
+              <p>Sat Chanthai</p></div>
+              <div><img src="images/member-2.png" />
+                <p>Sat Chanthai</p></div>
+              <div><img src="images/member-3.png" />
+                <p>Sat Chanthai</p></div>
+              <div><img src="images/member-4.png" />
+                <p>Sat Chanthai</p></div>
+              <div><img src="images/member-5.png" />
+                <p>Sat Chanthai</p></div>
+              <div><img src="images/member-6.png" />
+                <p>Sat Chanthai</p></div>
+              <div><img src="images/member-7.png" />
+                <p>Sat Chanthai</p></div>
+              <div><img src="images/member-8.png" />
+                <p>Sat Chanthai</p></div>
+              <div><img src="images/member-9.png" />
+                <p>Sat Chanthai</p></div>
+              
+            </div>
+          </div>
+
+
+        </div>
+        <div class="post-col">
+          <div class="write-post-container">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="" />
+              <div>
+                <p>Heng Sokkheng</p>
+                <small>Public <i class="fas fa-caret-down"></i></small>
+              </div>
+            </div>
+            <div class="post-input-container">
+              <textarea
+                rows="3"
+                placeholder="What's on your mind, Kheng?"
+              ></textarea>
+              <div class="add-post-links">
+                <a href="#"
+                  ><img src="images/live-video.png" alt="" />Live Video</a
+                >
+                <a href="#"
+                  ><img src="images/photo.png" alt="" />Photos/Video</a
+                >
+                <a href="#"
+                  ><img src="images/feeling.png" alt="" />Feeling/ Activity</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile-pic.png" alt="" />
+                <div>
+                  <p>Heng Sokkheng</p>
+                  <span>March 18 2024, 13:50 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">
+              Subscribe <span>@Easy Tutorials</span> Youtube chanel to watch
+              more videos on website development and UI designs.
+              <a href="#">#EasyTutorial</a> <a href="#">#YoutubeChannel</a>
+            </p>
+            <img src="images/feed-image-1.png" alt="" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="images/like-blue.png" alt="" />120</div>
+                <div><img src="images/comments.png" alt="" />45</div>
+                <div><img src="images/share.png" alt="" />20</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="images/profile-pic.png" alt="" />
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile-pic.png" alt="" />
+                <div>
+                  <p>Heng Sokkheng</p>
+                  <span>March 23 2024, 17:30 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">
+              Spend quality time with friends at
+              <span>@Easy Tutorials</span> after hard-work.
+              <a href="#">#EasyTutorial</a> <a href="#">#YoutubeChannel</a>
+            </p>
+            <img src="images/feed-image-2.png" alt="" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="images/like.png" alt="" />200</div>
+                <div><img src="images/comments.png" alt="" />100</div>
+                <div><img src="images/share.png" alt="" />40</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="images/profile-pic.png" alt="" />
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile-pic.png" alt="" />
+                <div>
+                  <p>Heng Sokkheng</p>
+                  <span>March 18 2024, 13:50 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">
+              Subscribe <span>@Easy Tutorials</span> Youtube chanel to watch
+              more videos on website development and UI designs.
+              <a href="#">#EasyTutorial</a> <a href="#">#YoutubeChannel</a>
+            </p>
+            <img src="images/feed-image-3.png" alt="" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="images/like-blue.png" alt="" />120</div>
+                <div><img src="images/comments.png" alt="" />45</div>
+                <div><img src="images/share.png" alt="" />20</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="images/profile-pic.png" alt="" />
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile-pic.png" alt="" />
+                <div>
+                  <p>Heng Sokkheng</p>
+                  <span>March 18 2024, 13:50 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">
+              Subscribe <span>@Easy Tutorials</span> Youtube chanel to watch
+              more videos on website development and UI designs.
+              <a href="#">#EasyTutorial</a> <a href="#">#YoutubeChannel</a>
+            </p>
+            <img src="images/feed-image-4.png" alt="" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="images/like-blue.png" alt="" />120</div>
+                <div><img src="images/comments.png" alt="" />45</div>
+                <div><img src="images/share.png" alt="" />20</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="images/profile-pic.png" alt="" />
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile-pic.png" alt="" />
+                <div>
+                  <p>Heng Sokkheng</p>
+                  <span>March 18 2024, 13:50 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">
+              Subscribe <span>@Easy Tutorials</span> Youtube chanel to watch
+              more videos on website development and UI designs.
+              <a href="#">#EasyTutorial</a> <a href="#">#YoutubeChannel</a>
+            </p>
+            <img src="images/feed-image-5.png" alt="" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="images/like-blue.png" alt="" />120</div>
+                <div><img src="images/comments.png" alt="" />45</div>
+                <div><img src="images/share.png" alt="" />20</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="images/profile-pic.png" alt="" />
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyright 2024 - Kheng Uchiha@</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
